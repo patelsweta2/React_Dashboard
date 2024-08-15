@@ -4,7 +4,7 @@ import data from "../data.json";
 
 const Dashboard = () => {
   return (
-    <div className="dashboard">
+    <div className="">
       {data.categories.map((category) => (
         <ModalCard key="category.id" category={category} />
       ))}

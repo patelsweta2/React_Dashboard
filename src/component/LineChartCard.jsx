@@ -54,7 +54,7 @@ const LineChartCard = ({ widget }) => {
   };
 
   return (
-    <div className="chart-card">
+    <div className="">
       <Line data={data} options={options} />
     </div>
   );

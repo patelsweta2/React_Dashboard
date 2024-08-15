@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <h1>Dynamic Dashboard</h1>
       <Dashboard />
     </div>
   );

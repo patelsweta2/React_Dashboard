@@ -24,25 +24,27 @@ const ChartCard = ({ widget }) => {
     ],
   };
   return (
-    <div className="chart-card">
-      <h3>{widget.name}</h3>
-      <Doughnut
-        data={data}
-        options={{
-          plugins: {
-            tooltip: {
-              callbacks: {
-                label: (context) => {
-                  const label = context.label || "";
-                  const value = context.raw;
-                  const percentage = ((value / totalAmount) * 100).toFixed(2);
-                  return `${label}: ${value} (${percentage}%)`;
+    <div className="w-full lg:w-1/2 p-4 shadow-lg flex flex-col">
+      <h3 className="text-lg font-medium mb-2 w-1/3">{widget.name}</h3>
+      <div className="w-2/3 flex flex-row justify-center">
+        <Doughnut
+          data={data}
+          options={{
+            plugins: {
+              tooltip: {
+                callbacks: {
+                  label: (context) => {
+                    const label = context.label || "";
+                    const value = context.raw;
+                    const percentage = ((value / totalAmount) * 100).toFixed(2);
+                    return `${label}: ${value} (${percentage}%)`;
+                  },
                 },
               },
             },
-          },
-        }}
-      />
+          }}
+        />
+      </div>
     </div>
   );
 };

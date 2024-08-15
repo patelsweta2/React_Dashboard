@@ -13,6 +13,7 @@
 
 .widgets-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -54,4 +55,22 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* .modal-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} */
+
+.widgets-container {
+  margin-top: 10px;
 }
