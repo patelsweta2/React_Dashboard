@@ -1,0 +1,144 @@
+{
+    "categories" : [
+        {
+            "id": 1,
+            "name": "CSPM Executive Dashboard",
+            "widgets": [
+                {
+                    "id": 1,
+                    "type": "circleGraph",
+                    "name": "Cloud Accounts",
+                    "variables": [
+                        {   
+                            "id":1,
+                            "var": "Connected",
+                            "amount": 2,
+                            "color": "#76f5f3"
+                        },
+                        {
+                            "id":2,
+                            "var" : "Not Connected",
+                            "amount": 2,
+                            "color": "#c5f3f2"
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "type": "circleGraph",
+                    "name": "Cloud Account Risk Assessment",
+                    "variables": [
+                        {
+                            "var": "Failed",
+                            "amount": 1689,
+                            "color": "#f3271d"
+                        },
+                        {
+                            "var" : "Warning",
+                            "amount": 681,
+                            "color": "#f3ed1d"
+                        },
+                        {
+                            "var" : "Not available",
+                            "amount": 36,
+                            "color": "#b2b1a9"
+                        },
+                        {
+                            "var" : "Passed",
+                            "amount": 7253,
+                            "color": "#2bcf1e"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":2,
+            "name": "CWPP Dashboard",
+            "widgets": [
+                {
+                    "id":1,
+                    "type": "none",
+                    "name": "Top 5 Namespace specific Alerts",
+                    "variables": "none"
+                },
+                {
+                    "id":2,
+                    "type": "none",
+                    "name": "Workloads Alerts",
+                    "variables": "none"
+                }
+            ]
+        },
+        {
+            "id":3,
+            "name": "Registry Scan",
+            "widgets": [
+                {
+                    "id":1,
+                    "type": "line",
+                    "name": "Image Risk Assessment",
+                    "variables": [
+                        {
+                            "id":1,
+                            "var" : "Critical",
+                            "amount": 9,
+                            "color": "#861606"
+                        },
+                        {
+                            "id":2,
+                            "var" : "High",
+                            "amount": 150,
+                            "color": "#ec361c"
+                        },
+                        {
+                            "id":3,
+                            "var" : "moderate",
+                            "amount": 130,
+                            "color": "#ecaa1c"
+                        },
+                        {
+                            "id":4,
+                            "var" : "Low",
+                            "amount": 90,
+                            "color": "#f5ed33"
+                        }
+                        
+                    ]
+                },
+                {
+                    "id": 2,
+                    "type": "line",
+                    "name": "Image Security Issues",
+                    "variables": [
+                        {
+                            "id":1,
+                            "var" : "Critical",
+                            "amount": 18,
+                            "color": "#861606"
+                        },
+                        {
+                            "id":2,
+                            "var" : "High",
+                            "amount": 120,
+                            "color": "#ec361c"
+                        },
+                        {
+                            "id":3,
+                            "var" : "moderate",
+                            "amount": 130,
+                            "color": "#ecaa1c"
+                        },
+                        {
+                            "id":4,
+                            "var" : "Low",
+                            "amount": 90,
+                            "color": "#f5ed33"
+                        }
+                        
+                    ] 
+                }
+            ]
+        }
+    ]
+}
